@@ -10,12 +10,13 @@
     
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Portafolio</a>
+        <a href="#" class="logo">Portfolio</a>
         
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
@@ -32,23 +33,30 @@
         <div class="home-content">
             <h3>Hello, It´s Me</h3>
             <h1>Alex Welz</h1>
-            <h3>And I´m a <span>Fronted Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aperiam facilis vitae harum velit perferendis cumque delectus.</p>
+            <h3>And I´m a <span>Programer trainee</span></h3>
+            <p>Programming student at the National Technological University - FRGP</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/alexwelz/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/alex.welz.33/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/alex-gustavo-welz/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/alexwelz" target="_blank"><i class="bi bi-github"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a download="CV- Alex Welz.pdf" href="/docs/CV- Alex Welz.pdf" class="btn">Download CV</a>
         </div>
 
-        <div class="home-img"></div>
-        <img src="images/home.jpg" alt="foto perfil">
+        <!-- <div class="home-img">
+            <img class="img-profile" src="images/home.jpg" alt="foto">
+        </div> -->
+        <div class="about-img">
+            <img class="img-profile" src="images/about.jpg" alt="foto">
+        </div>
+
     </section>
     
     <!-- obaut section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.jpg" alt="foto">
+            <img class="img-profile" src="images/about.jpg" alt="foto">
         </div>
 
         <div class="about-content">
@@ -64,11 +72,12 @@
         <h2 class="heading">Our <span>Services</span></h2>
 
         <div class="services-conteiner">
+
             <div class="services-box">
                 <i class='bx bx-code'></i>
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error quasi, eum sint fuga laudantium voluptas et voluptatum sit libero?</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="https://felix-vestre.web.app/index.html" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
@@ -97,64 +106,65 @@
 
     <!-- porfolio section design -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Proyect</span></h2>
+        <h2 class="heading">Proyects</h2>
 
         <div class="portfolio-container">
 
             <div class="portfolio-box">
                 <img src="images/portfolio1.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Juegos de dados</h4>
+                    <p>Juego de dados desarrollado por consola en C++. Entretenimiento enre amigos.</p>
+                    <a href="https://github.com/alexwelz/Juego-de-dados-por-consola"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="images/portfolio2.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
+                    <h4>Sistema de gestión</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://github.com/alexwelz/Sistema-de-gestion"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="images/portfolio3.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Felix Vestre</h4>
+                    <p>Proyecto para el artista de musica Felix Vestre realizado por el curso Full Stack - Winterhack CodeaRock. </p>
+                    <a href="https://felix-vestre.web.app/index.html"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
                 <img src="images/portfolio4.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
+                    <h4>Usuarios ABM Crud Net 7 MVC</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://github.com/alexwelz/UsuariosABM_CrudNet7MVC"><i class="bi bi-github"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="foto portfolio">
+                <img src="/images/portfolio5.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
+                    <h4>Articulos ABM Netframework</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://github.com/alexwelz/ArticulosABM_NetFramework"><i class="bi bi-github"></i></a>
                 </div>
             </div>
-
+            
             <div class="portfolio-box">
                 <img src="images/portfolio6.jpg" alt="foto portfolio">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
+                    <h4>Portfolio</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ea fugit consectetur maiores dignissimos repudiandae.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href=""><i class="bi bi-github"></i></a>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- contact section design -->
@@ -178,7 +188,7 @@
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by Alex Welz | All Right Reserved.</p>
+            <p>Copyright &copy; Made by Alex G. Welz - 2023</p>
         </div>
 
         <div class="footer-iconTop">

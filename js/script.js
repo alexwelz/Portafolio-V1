@@ -32,7 +32,7 @@ window.onescroll = () => {
 
     /*======================remove toggle icon and navbar when navbar link (scroll)===========================*/
     menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active'); // 57.00 min  NO FUNCIONA
+    navbar.classList.remove('active'); 
 
 };
 

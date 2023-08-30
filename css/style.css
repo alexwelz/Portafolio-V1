@@ -78,14 +78,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.home-img img{
-    width: 35vw;
-}
+/* .home-img img{
+    width: 20vw;
+} */
 
-
-img{
+.img-profile{
     border-radius: 50%;
 }
 
@@ -182,15 +182,18 @@ span{
     margin: 2rem 0 3rem;
 }
 
-/* ----------------cards--------------- */
+/* ---------------- Our Services cards--------------- */
 .services-conteiner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2em;
 }
 
+.services h2{
+    margin-bottom: 4rem;
+}
 
 .services-conteiner .services-box{
     flex: 1 1 30rem;
@@ -198,8 +201,9 @@ span{
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:2rem solid var(--second-bg-color);
+    border:.5rem solid var(--second-bg-color);
     transition: .5s ease;
+    
 }
 
 .services-conteiner .services-box:hover{
@@ -222,7 +226,7 @@ span{
     margin: 1rem 0 3rem;
 }
 
-/*--------- cards----------- */
+/*--------- Latest Proyect cards----------- */
 
 
 .portfolio{
@@ -304,6 +308,7 @@ span{
     color: var(--second-bg-color);
 }
 
+/*----------------------------------Contact----------------------------------*/
 .contact h2{
     margin-bottom:3rem ;
 }
