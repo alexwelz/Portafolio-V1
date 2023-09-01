@@ -190,6 +190,13 @@ span{
 
 /*----------------------------------Services Cards----------------------------------*/
 
+.service-img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+}
+
+
 .services h2{
     margin-bottom: 5rem;
 }
@@ -237,7 +244,11 @@ span{
 
 
 /*----------------------------------Proyect Cards----------------------------------*/
-
+.portfolio-img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+}
 
 .portfolio{
     background: var(--second-bg-color);
