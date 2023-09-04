@@ -158,6 +158,7 @@ span{
 .round{
     width: 20%;
     height: 40%;
+    right: 19%;
     position: absolute;
     border-color: var(--color-white) transparent;
     border-style:  solid;
