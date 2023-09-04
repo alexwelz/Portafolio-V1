@@ -158,7 +158,6 @@ span{
 .round{
     width: 20%;
     height: 40%;
-    /* right: 19%; */
     right: 364px;
     position: absolute;
     border-color: var(--color-white) transparent;
@@ -168,13 +167,14 @@ span{
     box-shadow: 0 0 1 rem var(--color-primary);
     animation:  RoundAni infinite linear 10s;
     
-}
+} 
+
 
 @keyframes RoundAni{
     to{
         transform: rotate(360deg);
     }
-}
+} 
 
 .moon{
     width: 2rem;
@@ -184,9 +184,7 @@ span{
     position: absolute;
     right: 60px;
     top: 40px;
-}
-
-
+} 
 
 /*----------------------------------About----------------------------------*/
 
@@ -522,23 +520,7 @@ span{
     .hom-img img{
         width: 70vw;
         margin-top:4rem;
-        /* animation: floatImage 4s ease-in-out infinite;image flotante */
     }
-
-    /*image flotante*/
-    /* @keyframes floatImage{
-        0%{
-            transform:  translateY(0);
-        }
-
-        50%{
-            transform:  translateY(-2.4rem);
-        }
-
-        100%{
-            transform:  translateY(0);
-        }
-    } */
 
     .about{
         flex-direction: column-reverse;
@@ -599,5 +581,4 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
-
 }
