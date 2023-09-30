@@ -156,9 +156,10 @@ span{
 }
 
 .round{
-    width: 20%;
-    height: 40%;
-    right: 364px;
+    width: 60%;
+    height: 70%;
+    /* right: 364px; */
+    right: auto;
     position: absolute;
     border-color: var(--color-white) transparent;
     border-style:  solid;
@@ -182,9 +183,11 @@ span{
     background:  var(--color-white);
     border-radius: 50%;
     position: absolute;
-    right: 60px;
+    right: 60px; 
     top: 40px;
+   
 } 
+
 
 /*----------------------------------About----------------------------------*/
 
@@ -198,6 +201,7 @@ span{
 
 .about-img img{
     width: 35vh;
+    position: relative;
 }
 
 .heading{
