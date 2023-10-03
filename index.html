@@ -150,18 +150,19 @@
 
         <form action="https://formsubmit.co/e2cd44985c2c967a2bf54fefb9d154eb" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" name="name">
-                <input type="Email" placeholder="Email Adress"  name="Email">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="Email" placeholder="Email Adress"  name="Email" required>
             </div>
             <div class="input-box">
                 <input type="number" placeholder="Mobile Number" name="number">
-                <input type="text" placeholder="Email Subject"  name="Subject">
+                <input type="text" placeholder="Email Subject"  name="Subject"required>
             </div>
-            <textarea name="comments" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="comments" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
 
             <input type="hidden" name="_next" value="https://alexwelz.github.io/Portfolio/"></input>
             <input type="hidden" name="_captcha" value="false"></input>
+           
         </form>
     </section>
 
