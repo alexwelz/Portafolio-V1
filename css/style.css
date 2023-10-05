@@ -88,6 +88,10 @@ section{
     width: 20vw;
 } */
 
+a {
+    text-decoration: none;
+ }
+
 .img-profile{
     border-radius: 50%;
 }
