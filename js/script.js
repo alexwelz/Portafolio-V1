@@ -79,6 +79,41 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    appendAlert('The mail was sent successfully!', 'success')
+
+    const nameInput = document.querySelector('input[name="name"]');
+    const emailInput = document.querySelector('input[name="Email"]');
+    const subjectInput = document.querySelector('input[name="Subject"]');
+    const messageTextarea = document.querySelector('textarea[name="comments"]');
+
+    if(
+      nameInput.value === ''
+    ){
+      appendAlert('Please full name is required', 'danger')
+
+    } else if(
+      emailInput.value === ''
+    ){
+      appendAlert('Please email adress is required. Example: example@gmail.com', 'danger')
+
+    } else if(
+      subjectInput.value === ''
+    ){
+      appendAlert('Please email Subject is required.', 'danger')
+
+    } else if(
+      messageTextarea.value === ''
+    ){
+      appendAlert('Please your message is required.', 'danger')
+
+    } else{
+
+      appendAlert('The mail was sent successfully!', 'success')
+   
+    }
   })
 }
+
+
+
+  
+
