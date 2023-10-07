@@ -62,55 +62,48 @@ const typed =new Typed('.multiple-text',{
 });
 
 
- /*====================== alter mail ===========================*/
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+/*====================== alter Email ===========================*/
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
 const appendAlert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+  const alertDiv = document.createElement('div');
+  alertDiv.classList.add('alert', `alert-${type}`, 'alert-dismissible', 'fade', 'show');
+  alertDiv.innerHTML = `
+    <div>${message}</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  `;
 
-  alertPlaceholder.append(wrapper)
-}
+  alertPlaceholder.appendChild(alertDiv);
 
-const alertTrigger = document.getElementById('liveAlertBtn')
+  setTimeout(() => {
+    alertDiv.classList.remove('show');
+    setTimeout(() => {
+      alertDiv.remove();
+    }, 1000); 
+  }, 5000);
+};
+
+const alertTrigger = document.getElementById('liveAlertBtn');
+
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-
     const nameInput = document.querySelector('input[name="name"]');
     const emailInput = document.querySelector('input[name="Email"]');
     const subjectInput = document.querySelector('input[name="Subject"]');
     const messageTextarea = document.querySelector('textarea[name="comments"]');
 
-    if(
-      nameInput.value === ''
-    ){
-      appendAlert('Please full name is required', 'danger')
-
-    } else if(
-      emailInput.value === ''
-    ){
-      appendAlert('Please email adress is required. Example: example@gmail.com', 'danger')
-
-    } else if(
-      subjectInput.value === ''
-    ){
-      appendAlert('Please email Subject is required.', 'danger')
-
-    } else if(
-      messageTextarea.value === ''
-    ){
-      appendAlert('Please your message is required.', 'danger')
-
-    } else{
-
-      appendAlert('The mail was sent successfully!', 'success')
-   
+    if (nameInput.value === '') {
+      appendAlert('Please enter your full name.', 'danger');
+    } else if (emailInput.value === '') {
+      appendAlert('Please enter your email address. Example: example@gmail.com', 'danger');
+    } else if (subjectInput.value === '') {
+      appendAlert('Please enter the email subject.', 'danger');
+    } else if (messageTextarea.value === '') {
+      appendAlert('Please enter your message.', 'danger');
+    } else {
+      appendAlert('The mail was sent successfully!', 'success');
     }
-  })
+  });
 }
 
 
