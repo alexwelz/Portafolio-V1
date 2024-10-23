@@ -1,7 +1,7 @@
 # Portafolio
 https://alexwelz.github.io/Portfolio/
 
- HTML - CSS - JSS
+ HTML - CSS - JS
 
 
 
